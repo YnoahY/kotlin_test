@@ -1,0 +1,22 @@
+
+
+
+1. layout(viewGroup) : view를 담는 그릇, view그룹 상속
+    - Linear Layout : orientation 필수
+    - Relative Layout : 부모 기준으로 관계 생성
+    - Frame Layout
+    * - constraint Layout : 수직, 수평 방향 모두 제약 둠
+        - relativeLayout에서 불가능한 자식뷰 사이의 관계 정의 가능
+        - LinearLayout을 사용해서 써야만 했던 뷰 비율 조절 가능
+        - 레이아웃 중첩 최소화, 유지 보수 및 성능 상승
+
+2. View : 화면 구성하는 컴파운트
+    - TextView
+    - ImageView
+    - Button
+    - RecyclerView
+    - EditText
+    - ....
+        
+        
+textSize는 sp로 지정
