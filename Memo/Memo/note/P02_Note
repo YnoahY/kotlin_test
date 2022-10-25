@@ -1,0 +1,16 @@
+
+* going to privious location
+    1) Mac : cmd + [,]  or cmd + option + left(right)
+    2) window ; ctrl + alt + left(right)
+
+
+* Room Components
+    1) Entity : DataBase 안에 있는 테이블
+    2) DAO : Data Access Object, 실질적으로 insert, delete 수행, 실질적으로 데이터베이스를 조작하는 펑션들을 정의
+    3) DataBase : 데이터베이스 메인 진입점
+        - DAO를 반환하는 추상 메소드 포함
+        - Entity리스트 포함
+
+
+- 엔티티는 하나의 테이블임,모든 엔티티는 프라이머리 1개 필수 포함
+- dependencies : 외부 라이브러리를 가져올 때 정의 해줌
