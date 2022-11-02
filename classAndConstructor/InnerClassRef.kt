@@ -13,7 +13,7 @@ class Child : Base1() {
         fun f() = println("Inside Class f()")
         fun test() {
             f() //1. 현재 이너 클래스의 f() 접근
-            Child.f() //2. 바로 바깥 클래스의 f() 접근
+            Child().f() //2. 바로 바깥 클래스의 f() 접근
             super@Child.f() //3. Child의 상위 클래스인 Base 클래스의 f()접근
             println("[Inside] super@Child.x: ${super@Child.x}") //4. Base의 x접근
             

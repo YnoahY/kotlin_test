@@ -6,7 +6,7 @@ class Patient1(val name: String, var id: Int) {
     }
 }
 
-class Doctor1(val name: String, val p: Patient) {
+class Doctor1(val name: String, val p: Patient1) {
 
     val customerId: Int = p.id
 
@@ -18,6 +18,6 @@ class Doctor1(val name: String, val p: Patient) {
 
 fun main() {
     val patient1 = Patient1("kildong", 1234)
-    val doc1 = Doctor("kimsabu", patient1)
+    val doc1 = Doctor1("kimsabu", patient1)
     doc1.patientList()
 }
